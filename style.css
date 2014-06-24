@@ -1,0 +1,36 @@
+.red{
+	background-color: red;
+	background-image: url('images/x.jpg');
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.blue{
+	background-color: blue;
+	background-image: url('images/o.jpg');
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+.gameOver{
+	z-index: 10000;
+	positon: absolute;
+	height: 300px;
+	width: 500px;
+	text-align: center;
+}
+
+.spaceWrapper{
+	display: inline-block;
+	width: 100px; 
+	height: 100px;
+	border: .5em solid white;
+}
+
+.gameOver{
+	position: absolute;
+	top: 200px;
+}
+

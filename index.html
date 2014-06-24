@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>xoxoxox</title>
+</head>
+<body ng-app="Game">
+	<div ng-controller = "gameCtrl">
+		<div style="text-align:center"><h1>Angular X's and O's</h1></div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class='col-md-4' style="margin: auto position: relative">
+					<div class="row">								
+						<gamespace positionplayed = "spacePlayed(1)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(2)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(3)" currentplayer = "currentplayer"></gamespace>
+					</div>	
+					<div class="row">			
+						<gamespace positionplayed = "spacePlayed(4)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(5)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(6)" currentplayer = "currentplayer"></gamespace>
+					</div>
+					<div class="row">
+						<gamespace positionplayed = "spacePlayed(7)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(8)" currentplayer = "currentplayer"></gamespace>
+						<gamespace positionplayed = "spacePlayed(9)" currentplayer = "currentplayer"></gamespace>
+					</div>	
+				</div>
+				<div class='col-md-4 col-md-offset-4 well'>
+					<div class='scoreboard'>
+						<div><span ><span ng-if="currentplayer=='Player1'"class="glyphicon glyphicon-chevron-right"></span>Player 1</div>
+						<div><span ><span ng-if="currentplayer=='Player2'"class="glyphicon glyphicon-chevron-right"></span>Player 2</div>
+					</div>
+					
+
+				</div>
+			</div>
+			
+		</div>
+		<gameovermessage></gameovermessage>
+		<stalemate></stalemate>
+	</div>
+	
+</body>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="main.js"></script>
+
+</html>
